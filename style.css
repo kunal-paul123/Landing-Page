@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 40%;
+    background-color: white;
+    position: relative;
+}
+
+.right {
+    height: 100%;
+    width: 60%;
+    background-image: url(https://images.unsplash.com/photo-1569442130407-8d2d49e741db?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.rtop {
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+    display: flex;
+}
+
+.rtopleft {
+    width: 55%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1463320898484-cdee8141c787?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2FjdHUlMjBpbiUyMGphcnxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.rtopright {
+    height: 100%;
+    width: 45%;
+    background-image: url(https://images.unsplash.com/photo-1540331547168-8b63109225b7?q=80&w=1919&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.lnav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+}
+
+.lnavr a {
+    margin-right: 20px;
+}
+
+.lnavr {
+    display: flex;
+    align-items: center;
+}
+
+.page-btn {
+    color: #000;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.work {
+   opacity: 0.6;
+}
+
+.lnavr i {
+    color: blue;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+} 
+
+.text h1 {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.text p {
+    opacity: 0.6;
+    font-size: 0.9rem;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.text a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+@media(max-width: 756px) {
+    .main {
+        flex-direction: column;
+    }
+    .main .left {
+        width: 100%;
+    }
+    .main .right {
+        width: 100%;
+    }
+}
